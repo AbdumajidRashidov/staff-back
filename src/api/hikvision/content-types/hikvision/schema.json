@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "hikvisions",
+  "info": {
+    "singularName": "hikvision",
+    "pluralName": "hikvisions",
+    "displayName": "Hikvision",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "ip": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "key": {
+      "type": "string"
+    },
+    "password": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string"
+    },
+    "company": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::company.company"
+    },
+    "deviceType": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::device-type.device-type"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "company_subscription_types",
+  "info": {
+    "singularName": "company-subscription-type",
+    "pluralName": "company-subscription-types",
+    "displayName": "CompanySubscriptionType",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "pricePerMonth": {
+      "type": "biginteger"
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}

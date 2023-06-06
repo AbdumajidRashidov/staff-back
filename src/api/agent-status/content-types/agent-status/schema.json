@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "agent_statuses",
+  "info": {
+    "singularName": "agent-status",
+    "pluralName": "agent-statuses",
+    "displayName": "AgentStatus",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    }
+  }
+}

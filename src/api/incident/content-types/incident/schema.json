@@ -1,0 +1,68 @@
+{
+  "kind": "collectionType",
+  "collectionName": "incidents",
+  "info": {
+    "singularName": "incident",
+    "pluralName": "incidents",
+    "displayName": "Incident",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "action": {
+      "type": "string"
+    },
+    "channel": {
+      "type": "string"
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "detectedAt": {
+      "type": "datetime"
+    },
+    "documentType": {
+      "type": "string"
+    },
+    "fileName": {
+      "type": "text"
+    },
+    "isShortenedContent": {
+      "type": "boolean"
+    },
+    "isViewed": {
+      "type": "boolean"
+    },
+    "matchingKeys": {
+      "type": "json"
+    },
+    "rate": {
+      "type": "integer"
+    },
+    "severity": {
+      "type": "integer"
+    },
+    "source": {
+      "type": "string"
+    },
+    "date": {
+      "type": "datetime"
+    },
+    "fileURL": {
+      "type": "text"
+    },
+    "computer": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::computer.computer"
+    },
+    "employee": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::employee.employee"
+    }
+  }
+}

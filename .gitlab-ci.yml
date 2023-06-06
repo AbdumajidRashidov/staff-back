@@ -1,0 +1,29 @@
+## Official docker compose image.
+#image:
+#  name: docker:20.10.16
+#
+#services:
+#  - docker:20.10.16-dind
+#
+#variables:
+#  DOCKER_TLS_CERTDIR: "/certs"
+#  IMAGE_NAME_PROD: oybekzdockerid/staff-backend
+#  IMAGE_TAG_PROD: latest
+#
+#stages:
+#  - build
+#  - deploy
+#
+#before_script:
+#  - docker version
+#  - docker-compose version
+#
+#build-prod:
+#  stage: build
+#  before_script:
+#    - docker login -u $DOCKER_ID -p $DOCKER_ID_PASS
+#  script:
+#    - docker build --build-arg NODE_ENV=production -t $IMAGE_NAME_PROD:$IMAGE_TAG_PROD .
+#    - docker push $IMAGE_NAME_PROD:$IMAGE_TAG_PROD
+#  only:
+#    - master

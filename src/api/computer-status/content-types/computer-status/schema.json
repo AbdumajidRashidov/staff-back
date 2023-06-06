@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "computer_statuses",
+  "info": {
+    "singularName": "computer-status",
+    "pluralName": "computer-statuses",
+    "displayName": "ComputerStatus"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    }
+  }
+}

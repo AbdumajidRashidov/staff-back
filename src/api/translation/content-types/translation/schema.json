@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "translations",
+  "info": {
+    "singularName": "translation",
+    "pluralName": "translations",
+    "displayName": "Translation",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "key": {
+      "type": "text"
+    },
+    "uz": {
+      "type": "text"
+    },
+    "en": {
+      "type": "text"
+    },
+    "ru": {
+      "type": "text"
+    }
+  }
+}

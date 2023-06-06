@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "web_searches",
+  "info": {
+    "singularName": "web-search",
+    "pluralName": "web-searches",
+    "displayName": "WebSearch",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "browser": {
+      "type": "string"
+    },
+    "host": {
+      "type": "text"
+    },
+    "text": {
+      "type": "text"
+    },
+    "date": {
+      "type": "datetime"
+    },
+    "employee": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::employee.employee"
+    }
+  }
+}

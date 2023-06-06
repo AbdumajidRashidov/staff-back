@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "web_visitings",
+  "info": {
+    "singularName": "web-visiting",
+    "pluralName": "web-visitings",
+    "displayName": "WebVisiting",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "browser": {
+      "type": "string"
+    },
+    "duration": {
+      "type": "biginteger"
+    },
+    "host": {
+      "type": "text"
+    },
+    "page": {
+      "type": "text"
+    },
+    "title": {
+      "type": "text"
+    },
+    "date": {
+      "type": "datetime"
+    },
+    "employee": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::employee.employee"
+    }
+  }
+}

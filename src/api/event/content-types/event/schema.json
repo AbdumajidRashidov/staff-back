@@ -1,0 +1,50 @@
+{
+  "kind": "collectionType",
+  "collectionName": "events",
+  "info": {
+    "singularName": "event",
+    "pluralName": "events",
+    "displayName": "Event",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "date": {
+      "type": "datetime"
+    },
+    "currentVerifyMode": {
+      "type": "string"
+    },
+    "mask": {
+      "type": "string"
+    },
+    "pictureURL": {
+      "type": "text"
+    },
+    "major": {
+      "type": "integer"
+    },
+    "subType": {
+      "type": "integer"
+    },
+    "hash": {
+      "type": "string"
+    },
+    "employee": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::employee.employee"
+    },
+    "hikvision": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::hikvision.hikvision"
+    }
+  }
+}

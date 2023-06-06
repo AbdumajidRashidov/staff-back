@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "productivity_categories",
+  "info": {
+    "singularName": "productivity-category",
+    "pluralName": "productivity-categories",
+    "displayName": "ProductivityCategory",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "parent": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::productivity-category.productivity-category"
+    }
+  }
+}

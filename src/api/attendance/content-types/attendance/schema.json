@@ -1,0 +1,65 @@
+{
+  "kind": "collectionType",
+  "collectionName": "attendances",
+  "info": {
+    "singularName": "attendance",
+    "pluralName": "attendances",
+    "displayName": "Attendance",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "firstIn": {
+      "type": "datetime"
+    },
+    "lastOut": {
+      "type": "datetime"
+    },
+    "company": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::company.company"
+    },
+    "employee": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::employee.employee"
+    },
+    "today": {
+      "type": "date"
+    },
+    "todayInNumber": {
+      "type": "biginteger"
+    },
+    "workTime": {
+      "type": "integer"
+    },
+    "isAbsent": {
+      "type": "boolean"
+    },
+    "isLateIn": {
+      "type": "boolean"
+    },
+    "isEarlyOut": {
+      "type": "boolean"
+    },
+    "absenceStatus": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::attendance-status.attendance-status"
+    },
+    "lateInStatus": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::attendance-status.attendance-status"
+    },
+    "earlyOutStatus": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::attendance-status.attendance-status"
+    }
+  }
+}

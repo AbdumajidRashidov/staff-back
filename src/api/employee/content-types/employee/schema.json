@@ -1,0 +1,120 @@
+{
+  "kind": "collectionType",
+  "collectionName": "employees",
+  "info": {
+    "singularName": "employee",
+    "pluralName": "employees",
+    "displayName": "Employee",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "email": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "isOnline": {
+      "type": "boolean"
+    },
+    "isDisabled": {
+      "type": "boolean"
+    },
+    "group": {
+      "type": "text"
+    },
+    "hostname": {
+      "type": "string"
+    },
+    "isAgentInstalled": {
+      "type": "boolean"
+    },
+    "lastComputer": {
+      "type": "string"
+    },
+    "lastSeen": {
+      "type": "string"
+    },
+    "rule": {
+      "type": "string"
+    },
+    "sId": {
+      "type": "text"
+    },
+    "tgAccount": {
+      "type": "string"
+    },
+    "token": {
+      "type": "text"
+    },
+    "getNameFromAd": {
+      "type": "boolean"
+    },
+    "isNotLicensed": {
+      "type": "boolean"
+    },
+    "position": {
+      "type": "string"
+    },
+    "firstName": {
+      "type": "string"
+    },
+    "lastName": {
+      "type": "string"
+    },
+    "userId": {
+      "type": "string"
+    },
+    "inDomain": {
+      "type": "boolean"
+    },
+    "face": {
+      "type": "text"
+    },
+    "address": {
+      "type": "text"
+    },
+    "userName": {
+      "type": "string"
+    },
+    "company": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::company.company",
+      "inversedBy": "employees"
+    },
+    "computer": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::computer.computer",
+      "inversedBy": "employees"
+    },
+    "user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    },
+    "department": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::department.department"
+    },
+    "employeeType": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::employee-type.employee-type"
+    },
+    "country": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::country.country"
+    },
+    "isAdmin": {
+      "type": "boolean"
+    }
+  }
+}

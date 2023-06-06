@@ -1,0 +1,81 @@
+{
+  "kind": "collectionType",
+  "collectionName": "companies",
+  "info": {
+    "singularName": "company",
+    "pluralName": "companies",
+    "displayName": "Company",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "address": {
+      "type": "string"
+    },
+    "logo": {
+      "type": "text"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "workStartTime": {
+      "type": "datetime"
+    },
+    "workEndTime": {
+      "type": "datetime"
+    },
+    "companyCategory": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::company-category.company-category"
+    },
+    "country": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::country.country"
+    },
+    "card": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::card.card"
+    },
+    "subscriptionType": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::company-subscription-type.company-subscription-type"
+    },
+    "employees": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::employee.employee",
+      "mappedBy": "company"
+    },
+    "users": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "plugin::users-permissions.user",
+      "mappedBy": "company"
+    },
+    "departments": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::department.department",
+      "mappedBy": "company"
+    },
+    "workTimeOffset": {
+      "type": "integer"
+    },
+    "attendanceStatuses": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::attendance-status.attendance-status",
+      "mappedBy": "company"
+    }
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "kind": "collectionType",
+  "collectionName": "permits",
+  "info": {
+    "singularName": "permit",
+    "pluralName": "permits",
+    "displayName": "Permit",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "guestName": {
+      "type": "string"
+    },
+    "visitPurpose": {
+      "type": "text"
+    },
+    "qrCode": {
+      "type": "text"
+    },
+    "guestDocId": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "expiryDate": {
+      "type": "datetime"
+    },
+    "isOneTime": {
+      "type": "boolean"
+    },
+    "passportSerie": {
+      "type": "string"
+    },
+    "passportNumber": {
+      "type": "string"
+    },
+    "passportDate": {
+      "type": "string"
+    },
+    "passportRegion": {
+      "type": "string"
+    },
+    "startDate": {
+      "type": "datetime"
+    },
+    "docType": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::doc-type.doc-type"
+    },
+    "company": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::company.company"
+    },
+    "responsiblePerson": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::employee.employee"
+    }
+  }
+}

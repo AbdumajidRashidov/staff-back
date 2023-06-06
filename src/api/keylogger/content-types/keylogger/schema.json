@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "keyloggers",
+  "info": {
+    "singularName": "keylogger",
+    "pluralName": "keyloggers",
+    "displayName": "Keylogger",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "activeWindowName": {
+      "type": "text"
+    },
+    "date": {
+      "type": "datetime"
+    },
+    "icon": {
+      "type": "text"
+    },
+    "process": {
+      "type": "string"
+    },
+    "text": {
+      "type": "text"
+    },
+    "isIncident": {
+      "type": "boolean"
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "employee": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::employee.employee"
+    }
+  }
+}

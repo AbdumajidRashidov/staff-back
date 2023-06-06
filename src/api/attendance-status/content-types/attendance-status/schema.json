@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "attendance_statuses",
+  "info": {
+    "singularName": "attendance-status",
+    "pluralName": "attendance-statuses",
+    "displayName": "AttendanceStatus",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "description": {
+      "type": "text"
+    },
+    "sign": {
+      "type": "string"
+    },
+    "isMain": {
+      "type": "boolean"
+    },
+    "company": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::company.company",
+      "inversedBy": "attendanceStatuses"
+    },
+    "key": {
+      "type": "string"
+    }
+  }
+}

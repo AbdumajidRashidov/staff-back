@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "active_windows",
+  "info": {
+    "singularName": "active-window",
+    "pluralName": "active-windows",
+    "displayName": "ActiveWindow",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "icon": {
+      "type": "text"
+    },
+    "process": {
+      "type": "string"
+    },
+    "duration": {
+      "type": "biginteger"
+    },
+    "title": {
+      "type": "text"
+    },
+    "date": {
+      "type": "datetime"
+    },
+    "employee": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::employee.employee"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "company_categories",
+  "info": {
+    "singularName": "company-category",
+    "pluralName": "company-categories",
+    "displayName": "CompanyCategory",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    }
+  }
+}

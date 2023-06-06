@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "agent_logs",
+  "info": {
+    "singularName": "agent-log",
+    "pluralName": "agent-logs",
+    "displayName": "AgentLog",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "function": {
+      "type": "string"
+    },
+    "message": {
+      "type": "text"
+    },
+    "module": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string"
+    },
+    "error": {
+      "type": "text"
+    },
+    "date": {
+      "type": "datetime"
+    },
+    "computer": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::computer.computer"
+    },
+    "employee": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::employee.employee"
+    }
+  }
+}

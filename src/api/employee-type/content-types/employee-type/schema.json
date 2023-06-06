@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "employee_types",
+  "info": {
+    "singularName": "employee-type",
+    "pluralName": "employee-types",
+    "displayName": "EmployeeType"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "kind": "collectionType",
+  "collectionName": "programs",
+  "info": {
+    "singularName": "program",
+    "pluralName": "programs",
+    "displayName": "Program",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "author": {
+      "type": "text"
+    },
+    "installPath": {
+      "type": "text"
+    },
+    "uninstallPath": {
+      "type": "text"
+    },
+    "size": {
+      "type": "biginteger"
+    },
+    "status": {
+      "type": "string"
+    },
+    "installedDate": {
+      "type": "datetime"
+    },
+    "version": {
+      "type": "string"
+    },
+    "productivityCategory": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::productivity-category.productivity-category"
+    },
+    "employee": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::employee.employee"
+    },
+    "computer": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::computer.computer"
+    }
+  }
+}

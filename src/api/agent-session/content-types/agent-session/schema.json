@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "agent_sessions",
+  "info": {
+    "singularName": "agent-session",
+    "pluralName": "agent-sessions",
+    "displayName": "AgentSession",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "connectTime": {
+      "type": "string"
+    },
+    "date": {
+      "type": "datetime"
+    },
+    "dateStr": {
+      "type": "string"
+    },
+    "disconnectTime": {
+      "type": "string"
+    },
+    "employee": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::employee.employee"
+    },
+    "computer": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::computer.computer"
+    }
+  }
+}

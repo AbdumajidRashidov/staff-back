@@ -1,0 +1,52 @@
+{
+  "kind": "collectionType",
+  "collectionName": "printings",
+  "info": {
+    "singularName": "printing",
+    "pluralName": "printings",
+    "displayName": "Printing",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "fileName": {
+      "type": "text"
+    },
+    "filePath": {
+      "type": "text"
+    },
+    "pagesCount": {
+      "type": "integer"
+    },
+    "printerName": {
+      "type": "string"
+    },
+    "copies": {
+      "type": "integer"
+    },
+    "isIncident": {
+      "type": "boolean"
+    },
+    "date": {
+      "type": "datetime"
+    },
+    "company": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::company.company"
+    },
+    "computer": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::computer.computer"
+    },
+    "employee": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::employee.employee"
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "program_activities",
+  "info": {
+    "singularName": "program-activity",
+    "pluralName": "program-activities",
+    "displayName": "ProgramActivity",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "sessionStart": {
+      "type": "datetime"
+    },
+    "sessionEnd": {
+      "type": "datetime"
+    },
+    "program": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::program.program"
+    },
+    "computer": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::computer.computer"
+    },
+    "employee": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::employee.employee"
+    }
+  }
+}
